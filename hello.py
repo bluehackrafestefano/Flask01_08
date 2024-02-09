@@ -12,7 +12,7 @@ def products():
 
 @app.route("/products/<int:id>")
 def product_detail(id):
-    return "<h1>Product Detail Page for {{ id }} </h1>"
+    return f"<h1>Product Detail Page for { id } </h1>"
 
 if __name__ == '__main__':
     # app.run(debug=True)
